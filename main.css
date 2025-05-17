@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(to right, #5ad190, #689fd3); 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    /* чуть потолще для навигации */
+    letter-spacing: 1px;
+    /* если хочешь воздушности */
+}
+
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu{
+    flex-grow: 1;
+}
+
+.menu ul{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 2px 0 0;
+    padding: 0;
+    line-height: 18px;
+    list-style: none;
+}
+
+.menu li{
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+    margin-right: 30px; 
+}
+
+.menu a, 
+.menu a:hover{
+    display: block;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    background-color: #ff3d00;
+    border-radius: 8px;
+}
+
+.menu a.active {
+    color: #fff;
+    background-color: #ff3d00; }
+
+.contacts {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts a {
+  color: #000;
+  text-decoration: none;
+}
+
+.logo img{
+    width: "100vw";
+    height: auto;
+}

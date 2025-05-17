@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Личный дневник</title>
+    <link rel="stylesheet" href="main3.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="ver1.html">
+                <img src="logo.png" width="100vw" , height="100vh" />
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href=about.html>Обо мне</a></li>
+                <li><a href=dates.html>Даты</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <a href="mailto:vadf0957@gmail.com">Написать мне</a>
+        </div>
+    </header>
+    <main>
+      <div class="content-section">
+        <article class = "custom-text">
+            <h1>Дневник. Версия 3</h1>
+            <p>16.05.2025 22:32</p>
+            <br>Сегодняшняя цель это, в первую очередь добавление простых сценариев JS на сайт.
+            <br>В первую очередь, это возможность добавления комментариев 
+            <br>Очень серьзеное решение, во-первых, нужно будет научиться добавлять возможности для работы с формой.
+            <br>Также планирую добавить секцию input для простого ввода текста, буду работать с кнопками.
+            <br>Такс, нужна будет, как я полагаю, база данных, возможно реляционная, в которой эти комментарии будут храниться и из которой будут отображаться.
+            <br>Касаемо самой реализации формы, есть событие onclick.
+            <br>Необходима четкая форма самого блока с комментами, а также шаблона для отдельного комммента, возможно, какая-то полупрозрачная фигня.
+            <br>Наконец, нужно настроить отображение комментариев оттуда, создание новых  комментраиев прямо на ходу
+        
+        </article>
+        <form class="custom-input" id="comment-form">
+            <input class = "name" type="text" placeholder="Имя">
+            <textarea class = "comment-inside" type="text" height = "800px" placeholder="Введите текст..."></textarea>
+            <button type = "submit" id="send_button">Send</button>
+        </form>
+      </div>
+
+      <div class="comment-section">
+        <h2>Комментарии</h2>
+      </div>
+
+      </main>
+
+      
+      <footer>
+      </footer>
+      <script src="comments.js"></script>
+    </body>
+    </html>
