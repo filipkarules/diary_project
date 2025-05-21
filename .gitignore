@@ -1,0 +1,28 @@
+# Файлы XAMPP/Windows
+*.log
+*.tmp
+
+# Среда разработки
+.vscode/
+.idea/
+
+# Окружение
+.env
+
+# Если используешь Composer
+/vendor/
+
+# Node/NPM (если используешь сборку фронтенда)
+node_modules/
+dist/
+build/
+
+# Кэш, резервные копии
+*.bak
+*.cache
+*.swp
+
+# Временные данные
+uploads/
+sessions/
+cache/
