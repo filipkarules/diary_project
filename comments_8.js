@@ -1,6 +1,8 @@
 document.getElementById("clear-comments").addEventListener("click", () => {
+    document.querySelector(".comment-section").innerHTML = `<h2>Комментарии (<span id="count-comments">0</span>)</h2>`;
     localStorage.removeItem("comments");
-    document.querySelector(".comment-section").innerHTML = "<h2>Комментарии</h2>";
+    savedComments.length = 0;
+
 });
 
 document.addEventListener("DOMContentLoaded", ()=> {
@@ -8,7 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const nameInput = form.querySelector(".name");
     const textInput = form.querySelector(".comment-inside");
     const commentSection = document.querySelector(".comment-section");
-
+    
 const savedComments = JSON.parse(localStorage.getItem("comments")) || [];
 savedComments.forEach(displayComment);
 document.getElementById("count-comments").textContent = savedComments.length.toString();

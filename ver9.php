@@ -5,12 +5,10 @@
     <main>
       <div class="content-section">
         <article class = "custom-text">
-            <h1>Дневник. Версия 8</h1>
-            <p>21.05.2025 23:38</p>
-            <br>Такс, сейчас всю ночь буду делать PHP реализацию кода.
-            <br>Также не стоит забывать про JQuery.
+            <h1>Дневник. Версия 9</h1>
+            <p>22.05.2025 23:38</p>
+            <br>Буду делать регистрацию/авторизацию чрез JWT (?).
             <br>Го.
-            <br>Пы сы. Добавил обработчик на кол-во комментариев.
         </article>
         <form class="custom-input" id="comment-form">
             <input class = "name" type="text" placeholder="Имя">

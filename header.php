@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Личный дневник</title>
-    <link rel="stylesheet" href="main7.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main8.css">
 </head>
 
 <body>

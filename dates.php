@@ -14,6 +14,7 @@
             <li><a href=ver6.html>19 мая 2025</a></li>
             <li><a href=ver7.html>20 мая 2025</a></li>
             <li><a href=ver8.php>21 мая 2025</a></li>
+            <li><a href=ver9.php>22 мая 2025</a></li>
         </ul>
     </section>
 </main>
