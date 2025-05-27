@@ -1,23 +1,22 @@
-document.getElementById("clear-comments").addEventListener("click", () => {
-    document.querySelector(".comment-section").innerHTML = `<h2>Комментарии (<span id="count-comments">0</span>)</h2>`;
-    localStorage.removeItem("comments");
-    savedComments.length = 0;
-
-});
-
 document.addEventListener("DOMContentLoaded", ()=> {
     const form = document.getElementById("comment-form");
     const nameInput = form.querySelector(".name");
     const textInput = form.querySelector(".comment-inside");
     const commentSection = document.querySelector(".comment-section");
     
+    document.getElementById("clear-comments").addEventListener("click", () => {
+        document.querySelector(".comment-section").innerHTML = `<h2>Комментарии (<span id="count-comments">0</span>)</h2>`;
+        localStorage.removeItem("comments");
+        savedComments.length = 0;
+        //location.reload();
+    }); 
+
 const savedComments = JSON.parse(localStorage.getItem("comments")) || [];
 savedComments.forEach(displayComment);
 document.getElementById("count-comments").textContent = savedComments.length.toString();
 
 
 form.addEventListener("submit", function(e) {
-    e.preventDefault();
 
 const nameOriginal = nameInput.value.trim();
 const textOriginal = textInput.value.trim();

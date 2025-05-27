@@ -1,6 +1,6 @@
     <?php
     $pageTitle = 'Даты дневника';
-    include '../diary_project/header.php';
+    include '../diary_project/header13.php';
     ?>
     <main>
     <section id="dates">
@@ -15,6 +15,9 @@
             <li><a href=ver7.html>20 мая 2025</a></li>
             <li><a href=ver8.php>21 мая 2025</a></li>
             <li><a href=ver9.php>22 мая 2025</a></li>
+            <li><a href=ver10.php>23 мая 2025</a></li>
+            <li><a href=ver12.php>25 мая 2025</a></li>
+            <li><a href=ver13.php>26 мая 2025</a></li>
         </ul>
     </section>
 </main>
