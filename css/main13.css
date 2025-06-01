@@ -1,0 +1,234 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #5ad190, #689fd3);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    /* чуть потолще для навигации */
+    letter-spacing: 1px;
+    /* если хочешь воздушности */
+}
+
+main{
+    flex: 1;
+    margin-bottom: 150px;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+ }
+
+ header::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 200px;
+     /* высота фонового изображения */
+     background-image: url('../img/header.png');
+     background-size: cover;
+     background-position: center bottom;
+     background-repeat: no-repeat;
+     z-index: -1;
+     transform: rotate(360deg);
+     /* чтобы изображение было под содержимым */ 
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 2px 0 0;
+    padding: 0;
+    line-height: 18px;
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+header a {
+    font-weight: bold;
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+}
+
+header a:hover {
+    color: #ffffff;
+    background-color: #ff3d00;
+    border-radius: 8px;
+}
+
+header a.active {
+    color: #fff;
+    background-color: #ff3d00;
+}
+
+.register-auto,
+.contacts {
+    margin-right: 30px;
+    line-height: 24px;
+}
+
+
+.logo {
+    margin-right: 30px;
+}
+
+.logo img {
+    height: auto;
+}
+
+.content-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 20px;
+}
+
+
+.custom-text{
+    flex: 1;
+}
+
+.reg-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reg-link a{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.auth-input{
+    background-color: #4c87be;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+.custom-input {
+    width: 50%;
+}
+
+.auth-input,
+.custom-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submit-button{
+    align-self:flex-end;
+    padding: 5px;
+    width: 60px;
+    font-size: 15px;
+}
+
+.name,
+.comment-inside {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    /* фиксированная высота input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-inside {
+    height: 150px;
+    resize: none;
+}
+
+.custom-input button{
+    width: 30%;
+    height: 30px;
+}
+
+
+.comment-section{
+    padding-left: 40px;
+}
+
+#clear-comments{
+    margin-left: 40px;
+    height: 30px;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    position: center bottom;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    /* высота фонового изображения */
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+
+.media {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+    margin-left:20%;
+    margin-bottom: 50px;
+}
+
+.media img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-text {
+    flex-basis: 30%;
+    font-size: 20px; 
+    color: #ccc;}
