@@ -22,6 +22,8 @@
             <li><a href='../pages/ver15.php'>28 мая 2025</a></li>
             <li><a href='../pages/ver16.php'>29 мая 2025</a></li>
             <li><a href='../pages/ver17.php'>30 мая 2025</a></li>
+            <li><a href='../pages/ver18.php'>1 июня 2025</a></li>
+            <li><a href='../pages/ver19.php'>2 июня 2025</a></li>
         </ul>
     </section>
 </main>
